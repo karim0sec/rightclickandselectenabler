@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Right Click and Select Enabler",
+  "version": "1.0",
+  "description": "Enable right-clicking and text selection on websites that try to prevent these actions",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
