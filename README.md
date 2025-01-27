@@ -1,13 +1,24 @@
-# Right Click and Select Enabler Chrome Extension
+# Right Click and DevTools Enabler Chrome Extension
 
-This Chrome extension enables right-clicking and text selection on websites that try to prevent these actions.
+This Chrome extension enables right-clicking, text selection, and DevTools access on websites that try to prevent these actions.
 
 ## Features
 
 - Enables right-clicking on all websites
 - Enables text selection on all websites
+- Bypasses DevTools detection and blocking
+- Prevents console clearing and debugger statements
 - Works automatically without any user configuration
 - Lightweight and efficient
+
+## Anti-Detection Features
+
+- Bypasses common DevTools detection methods
+- Prevents forced console clearing
+- Blocks debugger statements
+- Hides DevTools window detection
+- Maintains console functionality
+- Works across different browser contexts
 
 ## Installation
 
@@ -22,6 +33,9 @@ This Chrome extension enables right-clicking and text selection on websites that
 Once installed, the extension works automatically on all websites. You should now be able to:
 - Right-click normally on any website
 - Select and copy text from any website
+- Open and use DevTools without detection
+- Use the console without interference
+- Debug websites that try to prevent debugging
 
 No additional configuration is required.
 

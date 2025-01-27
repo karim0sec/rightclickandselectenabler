@@ -1,18 +1,23 @@
 {
   "manifest_version": 3,
-  "name": "Right Click and Select Enabler",
+  "name": "Right Click and DevTools Enabler",
   "version": "1.0",
-  "description": "Enable right-clicking and text selection on websites that try to prevent these actions",
+  "description": "Enable right-clicking, text selection, and DevTools on websites that try to prevent these actions",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
   ],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"],
       "css": ["styles.css"],
-      "run_at": "document_start"
+      "run_at": "document_start",
+      "all_frames": true
     }
   ],
   "icons": {
